@@ -23,7 +23,7 @@ public class App {
 		chromeOptions.addArguments(new String[] { "--no-sandbox" });
 		chromeOptions.addArguments(new String[] { "--disable-dev-shm-usage" });
 		final WebDriver driver = (WebDriver) new ChromeDriver(chromeOptions);
-		driver.get("http://65.0.180.78:8084/contact.html");
+		driver.get("http://15.207.54.56:8084/contact.html");
 		driver.manage().timeouts().implicitlyWait(5L, TimeUnit.SECONDS);
 		driver.findElement(By.id("inputName")).sendKeys(new CharSequence[] { "VamsiKrishna" });
 		driver.findElement(By.id("inputNumber")).sendKeys(new CharSequence[] { "1010101010" });
